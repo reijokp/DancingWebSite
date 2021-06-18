@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>GKP's Web Site</title>
+<link rel="stylesheet" type="text/css" href="defaultstyles.css" />
+<script src="SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css">
+</head>
+
+<body background="music_back2.jpg">
+<img src="VES Logo.jpg" alt="Vincent Elementary School Logo"/>
+<img src="001Cow-in-ladder_211720.jpg" width="159" height="115" alt="cow"><br />
+<br />
+
+<SCRIPT type="text/JavaScript"> 
+var d = new Date();
+var thehour = d.getHours();
+if (thehour >= 18) display = "Evening"; 
+else if (thehour >= 12) display = "Afternoon"; 
+else display = "Morning"; 
+var greeting = ("<h2>Good " + display + " and Welcome to Vincent School</h2>"); 
+document.write(greeting); 
+</script>
+
+<h3>
+Please click on one of the following links to go to that page:
+<br />
+<a href="bio.html">Homepage</a> - 
+<a href="resume.html">Principal's corner</a> - 
+<a href="portfolio.html">Our Staff</a> - 
+<a href="contacts.html">Our Teachers</a> - 
+<a href="links.html">Our Students</a> - 
+<a href="#news">Special Programs</a>
+<br />
+</h3>
+<p>Quote of the Day:</a>&nbsp;<i>
+  <script language="javascript" type="text/javascript">
+var d=new Date();
+var dsub=d.getDay();
+var quotes=new Array(7);
+quotes[0]="Always do everything you ask of those you command - Patton";
+quotes[1]="Ask not.... JFK";
+quotes[2]="All I am .... Abe Lincoln";
+quotes[3]="I have a dream MLK";
+quotes[4]="We have seen the enemy... GW";
+quotes[5]="Never, Never, Never give up. Winston Churchill";
+quotes[6]="Good night Gracie -  George Burns";
+document.write('&nbsp;&nbsp;' + quotes[dsub]);
+</script>
+</i></p>
+<p>
+  <noscript>
+  <br>
+  The quote of the day cannot be displayed. 
+  You need to enable JavaScript to see it.
+</noscript>
+  <br />
+  <br>
+  <br>
+Vincent School was established in 1960 and has been a leader in children's education since day one.</p>
+<p>On behalf of the Vincent staff, it is my pleasure to welcome you back to school. Our 2011-2012 school year is dedicated to preparing our students with the knowledge and skills necessary to successfully complete their K to 12th grade education and be ready to attend a 4-year college. We&rsquo;re well on our way!</p>
+<p>Congratulations to our amazing students. Our school recorded a 37-point increase on the API and we met all federal targets, due in part to a strong partnership between the home, school and community. We invite continued parent and community involvement at school, and by working together, we will continue to prepare our children to achieve whatever goals they set.</p>
+<br>
+<br />
+<form action="" method="post" name="username" id="username">
+  Please enter your name and information to be included on our mailing list:<br>
+  <br> 
+  First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="sprytextfield1">
+  <input name="firstname" type="text" id="firstname" tabindex="1" size="30" maxlength="40">
+  <span class="textfieldRequiredMsg">A value is required.</span></span><br />
+    Middle Initial:&nbsp;&nbsp;&nbsp;&nbsp;<span id="sprytextfield2">
+<input name="middleinit" type="text" id="middleinit" tabindex="2" size="4" maxlength="6">
+<span class="textfieldRequiredMsg">A value is required.</span></span><br />
+  Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="sprytextfield3">
+  <input name="lastname" type="text" id="lastname" tabindex="3" size="40" maxlength="50">
+  <span class="textfieldRequiredMsg">A value is required.</span></span><br />
+  Email Address:&nbsp;&nbsp;<span id="sprytextfield4">&nbsp;
+  <input name="emailaddress" type="text" id="emailaddress" tabindex="4" size="50" maxlength="80">
+  <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span><br />
+      <p>
+        <input type="submit" name="submit" id="submit" value="Submit Email Address" tabindex="5" />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="reset" name="clear" id="clear" value="Clear Email Address Info" tabindex="6" />
+      </p>
+<br />
+</form>
+<br />
+<form action="" method="get">
+  <p>Please enter your mailing address to be included in the PTA:<br>
+    <br>
+    Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="sprytextfield5">
+    <label>
+      <input name="name" type="text" id="name" tabindex="1" size="40" maxlength="50">
+    </label>
+    <span class="textfieldRequiredMsg">A value is required.</span></span><br>
+    Address:&nbsp;&nbsp;<span id="sprytextfield6">
+    <label>
+      <input name="address2" type="text" id="address2" tabindex="2" size="50" maxlength="70">
+    </label>
+    <span class="textfieldRequiredMsg">A value is required.</span></span><br>
+  City:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="sprytextfield7">
+  <label>
+    <input name="city" type="text" id="city" size="30" maxlength="40">
+  </label>
+  <span class="textfieldRequiredMsg">A value is required&nbsp;</span></span>&nbsp;<br>
+  State:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="sprytextfield8">
+  <label>
+    <input name="state" type="text" id="state" tabindex="4" size="4" maxlength="6">
+  </label>
+  <span class="textfieldRequiredMsg">A value is required</span></span>&nbsp;<br>
+  Zip code:&nbsp;<span id="sprytextfield9">
+  <label>
+    <input name="zipcode" type="text" id="zipcode" tabindex="5" size="10" maxlength="15">
+  </label>
+  <span class="textfieldRequiredMsg">A value is required.</span><span class="textfieldInvalidFormatMsg">Invalid format.</span></span>&nbsp; <br>
+    <br>
+    <input type="submit" name="submitaddress" id="submitaddress" value="Submit Address" tabindex="6">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="reset" name="clearaddress" id="clearaddress" value="Clear Address" tabindex="7">
+  </p>
+</form>
+<p><br />
+  <br />
+</p>
+<form action="" method="get">
+  We are conducting a survey to determine the school with the most visited web site.<br>
+  Please select your school name to be included in the survey:<br>
+  <label>
+    <select name="schoollist" id="schoollist" tabindex="1">
+      <option value="Cypress">Cypress School</option>
+      <option value="Glenwood">Glenwood School</option>
+      <option value="Grovecenter">Grovecenter School</option>
+      <option value="Lark Ellen">Lark Ellen School</option>
+      <option value="Mesa">Mesa School</option>
+      <option value="Northwood">Northwood School</option>
+      <option value="Rowland">Rowland School</option>
+      <option value="Vincent">Vincent School</option>
+      <option value="Workman">Workman School</option>
+    </select>
+  </label>
+  &nbsp;&nbsp;&nbsp;
+  <input type="submit" name="submitsurvey" id="submitsurvey" value="Submit Survey" tabindex="2">
+  <br>
+</form>
+<br>
+<br />
+<br />
+<form action="" method="get">
+  Please enter your comments about the web site:<br>
+  <br>
+  Enter your comments here:<br>
+  <span id="sprytextarea1">
+
+    <textarea name="comments" id="comments" cols="60" rows="6"></textarea>
+
+  <span class="textareaRequiredMsg">A value is required.</span></span> <br>
+<p>
+  <input type="submit" name="submitcomments" id="submitcomments" value="Submit Comments" tabindex="2">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <input type="reset" name="clearcomments" id="clearcomments" value="Clear Comments" tabindex="3">
+  <br>
+</p>
+</form><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+The javascrits on the page do this and that.......<br />
+<br />
+<br />
+<br />
+  <br />
+</p>
+<script type="text/javascript">
+var sprytextfield1 = new Spry.Widget.ValidationTextField("sprytextfield1");
+var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2");
+var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
+var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4", "email");
+var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
+var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
+var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
+var sprytextfield7 = new Spry.Widget.ValidationTextField("sprytextfield7");
+var sprytextfield8 = new Spry.Widget.ValidationTextField("sprytextfield8");
+var sprytextfield9 = new Spry.Widget.ValidationTextField("sprytextfield9", "zip_code");
+</script>
+</body>
+</html>
